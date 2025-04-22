@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowser's Castle Project</title>
+</head>
+<body>
+    <!-- INTRO TEXT -->
+    <h1 id="intro">SMW Graphics Wizard</h1>
+    <hr>
+    <P>Welcome! The purpose of this website is to help you recreate SMW graphics!</P>
+    <P><span class="Warning">Please understand each person should be assigned one GFX as there prime focus as it will make things move quicker! And when you're done, please go to the discord server and put a checkmark next to the completed graphic.</span></P>
+    <P><span class="Warning">Also please note that some functions of this program do not work as they are not needed for this project. Ex: Usage, Mode 7 functionality, ect.</span></P>
+    <p>Website created by: MVXgameS</p>
+
+    <!-- GFX Wizard -->
+    <hr><br>
+
+    <!-- class="canvas-container" -->
+    <div class="canvas-container">
+        <canvas id="tileCanvas" width="512" height="288"></canvas>
+        <canvas id="gridCanvas" width="512" height="288"></canvas>
+        <canvas id="clickCanvas" width="512" height="288"></canvas>
+    </div>
+
+    <div>
+        <canvas id="zoomCanvas" width="256" height="256"></canvas>
+    </div>
+
+    <label>Choose GFX:</label>
+    <select id="gfxPreset"></select>
+  
+    <label>Choose Palette:</label>
+    <select id="paletteOffsetSelect">
+        <option value="0">Palette 0</option>
+        <option value="1">Palette 1</option>
+        <option value="2">Palette 2</option>
+        <option value="3">Palette 3</option>
+        <option value="4">Palette 4</option>
+        <option value="5">Palette 5</option>
+        <option value="6">Palette 6</option>
+        <option value="7">Palette 7</option>
+        <option value="8">Palette 8</option>
+        <option value="9">Palette 9</option>
+        <option value="10">Palette A</option>
+        <option value="11">Palette B</option>
+        <option value="12">Palette C</option>
+        <option value="13">Palette D</option>
+        <option value="14">Palette E</option>
+        <option value="15">Palette F</option>
+    </select>
+
+    <label>Choose Type:</label>
+    <select id="palettePreset"></select>
+
+    <label>Choose Mode:</label>
+    <select id="modeSelect">
+        <option value="0">4BPP SNES</option>
+        <option value="1">2BPP GB</option>
+    </select>
+
+    <!-- Descriptions -->
+    <div id="tileInfo" style="margin-top: 10px; font-weight: bold;"></div>
+    
+    <!-- For Hex Codes -->
+    <h2>Current Palette</h2>
+    <div id="paletteDisplay"></div>
+
+    <script src="tileDescriptions.js"></script>
+    <script src="SNESTileViewer.js"></script>
