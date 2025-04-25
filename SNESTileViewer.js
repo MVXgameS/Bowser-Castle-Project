@@ -10,7 +10,7 @@ const TILES_PER_ROW = canvas.width / (TILE_SIZE * SCALE);
 // Presets
 const gfxPresets = [
   { name: "Castle Foreground", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/76d539459da70f09623c51af13ad09d33e398e6f/Graphics/CastleForeground.bin" },
-  { name: "Enemies 1", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/aba52f2186c9e64daf7532147ec7ac70c5076ad5/Graphics/Enemies1.bin" },
+  { name: "Enemies 1", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/95a068e1edef966134c1b15d143195ea29bbef3e/Graphics/Enemies1.bin" },
   { name: "Enemies 2", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/aba52f2186c9e64daf7532147ec7ac70c5076ad5/Graphics/Enemies2.bin" },
   { name: "Fire Hazards 1", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/aba52f2186c9e64daf7532147ec7ac70c5076ad5/Graphics/FireHazards1.bin" },
   { name: "Fire Hazards 2", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/aba52f2186c9e64daf7532147ec7ac70c5076ad5/Graphics/FireHazards2.bin" },
