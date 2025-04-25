@@ -179,6 +179,52 @@ function createTileMap(coords, description) {
           mode: "4BPP SNES"
         }
       ),
+      //Koopa Climbing
+      ...createTileMap(
+        ["0_128", "0_160", "0_192", "0_224", "32_128", "32_160", "32_192", "32_224"],
+        {
+          usage: "Back facing climbing Koopa Frame 1/2 (Note: only difference between Frame 1 and 2, is a flip on the x-axis of the graphic)",
+          palette: "Palette A/Palette B/Palette C/Palette D",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["64_128", "64_160", "64_192", "64_224", "96_128", "96_160", "96_192", "96_224"],
+        {
+          usage: "Back facing climbing Koopa Frame 2/2 (Note: only difference between Frame 1 and 2, is a flip on the x-axis of the graphic)",
+          palette: "Palette A/Palette B/Palette C/Palette D",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["128_128", "128_160", "128_192", "128_224", "160_128", "160_160", "160_192", "160_224"],
+        {
+          usage: "Front facing climbing Koopa Frame 1/2 (Note: only difference between Frame 1 and 2, is a flip on the x-axis of the graphic)",
+          palette: "Palette A/Palette B/Palette C/Palette D",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["192_128", "192_160", "192_192", "192_224", "224_128", "224_160", "224_192", "224_224"],
+        {
+          usage: "Front facing climbing Koopa Frame 2/2 (Note: only difference between Frame 1 and 2, is a flip on the x-axis of the graphic)",
+          palette: "Palette A/Palette B/Palette C/Palette D",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["256_128", "256_160", "256_192", "256_224", "288_128", "288_160", "288_192", "288_224"],
+        {
+          usage: "Turning graphic used for the Koopa Climbing sprite",
+          palette: "Palette A/Palette B/Palette C/Palette D",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
       //Spiny Walking
       ...createTileMap(
         ["0_64", "0_96", "32_64", "32_96"],
