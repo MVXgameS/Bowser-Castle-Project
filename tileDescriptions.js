@@ -6,6 +6,58 @@ function createTileMap(coords, description) {
   }
   
   const tileDescriptionsByGFX = {
+    "Living Hazards 2": {
+      //
+      ...createTileMap(
+        ["0_0"],
+        {
+          usage: "",
+          palette: "Palette ",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+    },
+    "Living Hazards 1": {
+      //Banzai Bill
+      ...createTileMap(
+        ["0_0", "0_32", "0_64", "0_96", "0_128", "0_160", "0_192", "0_224",
+          "32_0", "32_32", "32_64", "32_96", "32_128", "32_160", "32_192", "32_224",
+          "64_0", "64_32", "64_64", "64_96", "64_128", "64_160", "64_192", "64_224",
+          "96_0", "96_32", "96_64", "96_96", "96_128", "96_160", "96_192", "96_224",
+          "128_0", "128_32", "128_64", "128_96", "128_128", "128_160", "128_192", "128_224",
+          "160_0", "160_32", "160_64", "160_96", "160_128", "160_160", "160_192", "160_224",
+          "192_0", "192_32", "192_64", "192_96", "192_128", "192_160", "192_192", "192_224",
+          "224_0", "224_32", "224_64", "224_96", "224_128", "224_160", "224_192", "224_224"
+        ],
+        {
+          usage: "Banzai Bill",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Bullet Bill
+      ...createTileMap(
+        ["256_64", "256_96", "288_64", "288_96"],
+        {
+          usage: "Bullet Bill",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Bullet Bill Blaster
+      ...createTileMap(
+        ["256_128", "256_160", "256_192", "256_224", "288_128", "288_160", "288_192", "288_224"],
+        {
+          usage: "Bullet Bill Blaster",
+          palette: "Palette 4",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+    },
     "Fire Hazards 3": {
       //Burner Flame
       ...createTileMap(

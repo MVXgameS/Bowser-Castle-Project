@@ -15,6 +15,8 @@ const gfxPresets = [
   { name: "Fire Hazards 1", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/66265324233d2fc25f60e5d5327d4cc9b091bce5/Graphics/FireHazards1.bin" },
   { name: "Fire Hazards 2", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/dbd6eead5fe73b85522a0b252f1eb231fcaa0ac1/Graphics/FireHazards2.bin" },
   { name: "Fire Hazards 3", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/dbd6eead5fe73b85522a0b252f1eb231fcaa0ac1/Graphics/FireHazards3.bin" },
+  { name: "Living Hazards 1", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/15f5791924d644bcf28c596613f99277e5c8cd85/Graphics/LivingHazards1.bin" },
+  { name: "Living Hazards 2", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/15f5791924d644bcf28c596613f99277e5c8cd85/Graphics/LivingHazards2.bin" },
 ];
 
 const palettePresets = [
