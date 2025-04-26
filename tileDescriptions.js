@@ -6,7 +6,233 @@ function createTileMap(coords, description) {
   }
   
   const tileDescriptionsByGFX = {
-    "Fire Hazards 1":{
+    "Fire Hazards 3": {
+      //Burner Flame
+      ...createTileMap(
+        ["0_0", "0_32", "0_64", "32_0", "32_32", "32_64"],
+        {
+          usage: "Burner Flame Frame 1/6 (Note: Frame 2 is the exact same graphic as Frame 1, just flipped on the x-axis)",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["64_0", "64_32", "64_64", "96_0", "96_32", "96_64"],
+        {
+          usage: "Burner Flame Frame 2/6 (Note: Frame 2 is the exact same graphic as Frame 1, just flipped on the x-axis)",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["128_0", "128_32", "128_64", "128_96", "128_128", "160_0", "160_32", "160_64", "160_96", "160_128"],
+        {
+          usage: "Burner Flame Frame 3/6 (Note: Frame 4 is the exact same graphic as Frame 3, just flipped on the x-axis)",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["192_0", "192_32", "192_64", "192_96", "192_128", "224_0", "224_32", "224_64", "224_96", "224_128"],
+        {
+          usage: "Burner Flame Frame 4/6 (Note: Frame 4 is the exact same graphic as Frame 3, just flipped on the x-axis)",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["256_0", "256_32", "256_64", "256_96", "256_128", "256_160", "288_0", "288_32", "288_64", "288_96", "288_128", "288_160"],
+        {
+          usage: "Burner Flame Frame 5/6",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["320_0", "320_32", "320_64", "320_96", "320_128", "320_160", "352_0", "352_32", "352_64", "352_96", "352_128", "352_160"],
+        {
+          usage: "Burner Flame Frame 6/6",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Burner Base
+      ...createTileMap(
+        ["384_0", "384_32", "416_0", "416_32"],
+        {
+          usage: "Burner Base",
+          palette: "Palette 2",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+    },
+    "Fire Hazards 2": {
+      //Blargg
+      ...createTileMap(
+        ["0_0", "0_32", "0_64", "0_96", "32_0", "32_32", "32_64", "32_96", 
+          "64_0", "64_32", "64_64", "64_96", "96_0", "96_32", "96_64", "96_96",
+          "128_0", "128_32", "128_64", "128_96", "160_0", "160_32", "160_64", "160_96",
+        ],
+        {
+          usage: "Graphic for the Blargg Frame 1/2",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["192_0", "192_32", "192_64", "192_96", "224_0", "224_32", "224_64", "224_96", 
+          "256_0", "256_32", "256_64", "256_96", "288_0", "288_32", "288_64", "288_96",
+          "320_0", "320_32", "320_64", "320_96", "352_0", "352_32", "352_64", "352_96",
+        ],
+        {
+          usage: "Graphic for the Blargg Frame 2/2",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Firebar Base
+      ...createTileMap(
+        ["384_0", "384_32", "416_0", "416_32"],
+        {
+          usage: "Firebar Base",
+          palette: "Palette 2",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Firebar Flame
+      ...createTileMap(
+        ["448_0", "480_0"],
+        {
+          usage: "Firebar Flame Frame 1/3",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["448_32", "480_32"],
+        {
+          usage: "Firebar Flame Frame 2/3",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["448_64", "480_64"],
+        {
+          usage: "Firebar Flame Frame 3/3",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Small Sparky
+      ...createTileMap(
+        ["0_128", "0_160", "32_128", "32_160"],
+        {
+          usage: "Used for the Small Sparky Frame 1/2",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["64_128", "64_160", "96_128", "96_160"],
+        {
+          usage: "Used for the Small Sparky Frame 2/2",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Podoboo
+      ...createTileMap(
+        ["0_192", "0_224", "32_192", "32_224"],
+        {
+          usage: "Used for the Podoboo Frame 1/2",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["64_192", "64_224", "96_192", "96_224"],
+        {
+          usage: "Used for the Podoboo Frame 2/2",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Bowser Statue Flame
+      ...createTileMap(
+        ["128_128", "160_128"],
+        {
+          usage: "Used for the flames spit out by Bowser's statues Frame 1/2",
+          palette: "Palette C",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["192_128", "224_128"],
+        {
+          usage: "Used for the flames spit out by Bowser's statues Frame 2/2",
+          palette: "Palette C",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Lava Splashes
+      ...createTileMap(
+        ["128_160"],
+        {
+          usage: "Used for the trail of the Podoboo and the splash for the Blargg Frame 1/4",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["160_160"],
+        {
+          usage: "Used for the trail of the Podoboo and the splash for the Blargg Frame 2/4",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["192_160"],
+        {
+          usage: "Used for the trail of the Podoboo and the splash for the Blargg Frame 3/4",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["224_160"],
+        {
+          usage: "Used for the trail of the Podoboo and the splash for the Blargg Frame 4/4",
+          palette: "Palette A",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+    },
+    "Fire Hazards 1": {
     //Big Sparky
       ...createTileMap(
         ["0_0", "0_32", "0_64", "0_96", "32_0", "32_32", "32_64", "32_96", 
