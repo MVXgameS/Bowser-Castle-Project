@@ -7,12 +7,95 @@ function createTileMap(coords, description) {
   
   const tileDescriptionsByGFX = {
     "Living Hazards 2": {
-      //
+      //Muncher
       ...createTileMap(
-        ["0_0"],
+        ["0_0", "0_32", "32_0", "32_32"],
         {
-          usage: "",
-          palette: "Palette ",
+          usage: "Muncher Frame 1/2",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["64_0", "64_32", "96_0", "96_32"],
+        {
+          usage: "Muncher Frame 2/2",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Thwomp
+      ...createTileMap(
+        ["128_0", "128_32", "128_64", "128_96", 
+          "160_0", "160_32", "160_64", "160_96", 
+          "192_0", "192_32", "192_64", "192_96", 
+          "224_0", "224_32", "224_64", "224_96"],
+        {
+          usage: "Thwomp idle",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["256_0", "256_32", "256_64", "256_96", 
+          "288_0", "288_32", "288_64", "288_96", 
+          "320_0", "320_32", "320_64", "320_96", 
+          "352_0", "352_32", "352_64", "352_96"],
+        {
+          usage: "Thwomp searching",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["384_0", "384_32", "384_64", "384_96", 
+          "416_0", "416_32", "416_64", "416_96", 
+          "448_0", "448_32", "448_64", "448_96", 
+          "480_0", "480_32", "480_64", "480_96"],
+        {
+          usage: "Thwomp smashing",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Pirahna Plant
+      ...createTileMap(
+        ["0_64", "0_96", "32_64", "32_96"],
+        {
+          usage: "Pirahna plant Frame 1/2",
+          palette: "Palette C",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["0_128", "32_128"],
+        {
+          usage: "Pirahna plant Frame 1/2",
+          palette: "Palette D",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["64_64", "64_96", "96_64", "96_96"],
+        {
+          usage: "Pirahna plant Frame 2/2",
+          palette: "Palette C",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["64_128", "96_128"],
+        {
+          usage: "Pirahna plant Frame 2/2",
+          palette: "Palette D",
           type: "Castle",
           mode: "4BPP SNES"
         }
