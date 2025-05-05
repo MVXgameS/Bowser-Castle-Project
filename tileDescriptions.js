@@ -6,6 +6,142 @@ function createTileMap(coords, description) {
   }
   
   const tileDescriptionsByGFX = {
+    "Inanimate Hazards": {
+      //Spikes
+      ...createTileMap(
+        ["0_0", "0_32", "32_0", "32_32", "64_0", "64_32", "96_0", "96_32"],
+        {
+          usage: "Spikes",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Cannonball
+      ...createTileMap(
+        ["128_0", "128_32", "160_0", "160_32"],
+        {
+          usage: "Cannonball",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Canon
+      ...createTileMap(
+        ["128_64", "128_96", "160_64", "160_96"],
+        {
+          usage: "Cannon",
+          palette: "Palette 4",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["128_128", "128_160", "160_128", "160_160"],
+        {
+          usage: "Cannon stand",
+          palette: "Palette 4",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Bowser Statue
+      ...createTileMap(
+        ["0_64", "0_96", "32_64", "32_96", "32_128", "64_96", "64_128"],
+        {
+          usage: "Bowser Statue",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Sawblade
+      ...createTileMap(
+        ["192_0", "192_32", "192_64", "192_96", 
+          "224_0", "224_32", "224_64", "224_96", 
+          "256_0", "256_32", "256_64", "256_96",
+        "288_0", "288_32", "288_64", "288_96"],
+        {
+          usage: "Sawblade Frame 1/2",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["320_0", "320_32", "320_64", "320_96", 
+          "352_0", "352_32", "352_64", "352_96", 
+          "384_0", "384_32", "384_64", "384_96",
+        "416_0", "416_32", "416_64", "416_96"],
+        {
+          usage: "Sawblade Frame 2/2",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Mechanical Toothsaw
+      ...createTileMap(
+        ["448_0", "448_32", "448_64", "448_96", 
+          "480_0", "480_32", "480_64", "480_96"],
+        {
+          usage: "Saw part of the Mechanical Toothsaw sprite",
+          palette: "Palette 9",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["384_128", "384_160", 
+          "416_128", "416_160"],
+        {
+          usage: "Motor for Mechanical Toothsaw sprite Frame 1/3",
+          palette: "Palette B",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["448_128", "448_160", 
+          "480_128", "480_160"],
+        {
+          usage: "Motor for Mechanical Toothsaw sprite Frame 2/3",
+          palette: "Palette B",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["448_192", "448_224", 
+          "480_192", "480_224"],
+        {
+          usage: "Motor for Mechanical Toothsaw sprite Frame 3/3",
+          palette: "Palette B",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Skewer
+      ...createTileMap(
+        ["64_192", "64_224", 
+          "96_192", "96_224",
+          "128_192", "128_224",
+          "160_192", "160_224",
+          "192_128","192_160", "192_160", "192_192", "192_224",
+          "224_128","224_160", "224_160", "224_192", "224_224",
+          "256_128","256_160", "256_160", "256_192", "256_224",
+          "288_128","288_160", "288_160", "288_192", "288_224",
+          "320_128","320_160", "320_160", "320_192", "320_224",
+          "352_128","352_160", "352_160", "352_192", "352_224"],
+        {
+          usage: "Skewer",
+          palette: "Palette 0",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+    },
     "Living Hazards 2": {
       //Muncher
       ...createTileMap(
@@ -102,6 +238,16 @@ function createTileMap(coords, description) {
       ),
     },
     "Living Hazards 1": {
+      //Bill Blaster Cloud
+      ...createTileMap(
+        ["288_0", "288_32", "320_0", "320_32"],
+        {
+          usage: "Action cloud used for when the bullet bill is blasted from the cannon",
+          palette: "Any",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
       //Banzai Bill
       ...createTileMap(
         ["0_0", "0_32", "0_64", "0_96", "0_128", "0_160", "0_192", "0_224",
