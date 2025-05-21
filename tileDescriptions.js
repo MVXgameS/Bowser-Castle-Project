@@ -7,7 +7,7 @@ function createTileMap(coords, description) {
   
   const tileDescriptionsByGFX = {
     "Gimmick Blocks": {
-      //ON/OFF
+      //ON OFF Switch
       ...createTileMap(
         ["0_0", "0_32", "32_0", "32_32"],
         {
@@ -35,7 +35,7 @@ function createTileMap(coords, description) {
           mode: "4BPP SNES"
         }
       ),
-      //Turn Blocks/Brick Blocks
+      //Brick Blocks
       ...createTileMap(
         ["192_0", "192_32", "224_0", "224_32"],
         {
@@ -99,11 +99,11 @@ function createTileMap(coords, description) {
           mode: "4BPP SNES"
         }
       ),
-      //ON/OFF Blocks
+      //ON OFF Blocks
       ...createTileMap(
         ["256_64", "256_96", "288_64", "288_96", "320_64", "320_96", "352_64", "352_96"],
         {
-          usage: "Red ON/OFF Blocks",
+          usage: "Blue ON/OFF Blocks",
           palette: "Palette 7",
           type: "Castle",
           mode: "4BPP SNES"
@@ -112,7 +112,7 @@ function createTileMap(coords, description) {
       ...createTileMap(
         ["384_64", "384_96", "416_64", "416_96", "448_64", "448_96", "480_64", "480_96"],
         {
-          usage: "Blue ON/OFF Blocks",
+          usage: "Red ON/OFF Blocks",
           palette: "Palette 7",
           type: "Castle",
           mode: "4BPP SNES"
