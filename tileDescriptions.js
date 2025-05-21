@@ -6,6 +6,138 @@ function createTileMap(coords, description) {
   }
   
   const tileDescriptionsByGFX = {
+    "Gimmick Blocks": {
+      //ON/OFF
+      ...createTileMap(
+        ["0_0", "0_32", "32_0", "32_32"],
+        {
+          usage: "ON state Switch",
+          palette: "Palette 7",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["64_0", "64_32", "96_0", "96_32"],
+        {
+          usage: "OFF state Switch",
+          palette: "Palette 7",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["128_0", "128_32", "160_0", "160_32"],
+        {
+          usage: "Transition frame used when switching from ON state to OFF state",
+          palette: "Palette 7",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Turn Blocks/Brick Blocks
+      ...createTileMap(
+        ["192_0", "192_32", "224_0", "224_32"],
+        {
+          usage: "Brick Block Frame 1/5",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["256_0", "256_32", "288_0", "288_32"],
+        {
+          usage: "Brick Block Frame 2/5",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["320_0", "320_32", "352_0", "352_32"],
+        {
+          usage: "Brick Block Frame 3/5",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["384_0", "384_32", "416_0", "416_32"],
+        {
+          usage: "Brick Block Frame 4/5",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["448_0", "448_32", "480_0", "480_32"],
+        {
+          usage: "Brick Block Frame 5/5",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Pipes
+      ...createTileMap(
+        ["0_64", "0_96", "0_128", "0_160", 
+          "32_64", "32_96", "32_128", "32_160",
+          "64_64", "64_96", "64_128", "64_160",
+          "96_64", "96_96", "96_128", "96_160",
+          "128_64", "128_96", "128_128", "128_160",
+          "160_64", "160_96", "160_128", "160_160",
+          "192_64", "192_96", "192_128", "192_160",
+          "224_64", "224_96", "224_128", "224_160",
+        ],
+        {
+          usage: "Pipes",
+          palette: "Palette 3",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //ON/OFF Blocks
+      ...createTileMap(
+        ["256_64", "256_96", "288_64", "288_96", "320_64", "320_96", "352_64", "352_96"],
+        {
+          usage: "Red ON/OFF Blocks",
+          palette: "Palette 7",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["384_64", "384_96", "416_64", "416_96", "448_64", "448_96", "480_64", "480_96"],
+        {
+          usage: "Blue ON/OFF Blocks",
+          palette: "Palette 7",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      //Kaizo Blocks
+      ...createTileMap(
+        ["256_128", "256_160", "288_128", "288_160"],
+        {
+          usage: "Kaizo blocks Frame 1/2",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+      ...createTileMap(
+        ["320_128", "320_160", "352_128", "352_160"],
+        {
+          usage: "Kaizo blocks Frame 2/2",
+          palette: "Palette 6",
+          type: "Castle",
+          mode: "4BPP SNES"
+        }
+      ),
+    },
     "Inanimate Hazards": {
       //Spikes
       ...createTileMap(

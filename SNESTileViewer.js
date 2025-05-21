@@ -18,6 +18,7 @@ const gfxPresets = [
   { name: "Living Hazards 1", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/15f5791924d644bcf28c596613f99277e5c8cd85/Graphics/LivingHazards1.bin" },
   { name: "Living Hazards 2", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/15f5791924d644bcf28c596613f99277e5c8cd85/Graphics/LivingHazards2.bin" },
   { name: "Inanimate Hazards", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/9c801fbf1bfbd6ed8b4d7ce9374f49a70911a2b0/Graphics/InanimateHazards.bin" },
+  { name: "Gimmick Blocks", path: "https://raw.githubusercontent.com/MVXgameS/Bowser-Castle-Project/991ffc5192248679436e089b9d84b335a63d2545/Graphics/GimmickBlocks1.bin" },
 ];
 
 const palettePresets = [
